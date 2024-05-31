@@ -6,7 +6,7 @@ export default function Home() {
     <div className='text-white'>
       <nav
         style={{ backgroundColor: "#223544" }}
-        className='p-4 md:p-6 md:px-10 lg:px-10 xl:px-20 2xl:px-40 text-white flex justify-between items-center'
+        className='h-24 p-4 md:p-6 md:px-10 lg:px-10 xl:px-20 2xl:px-40 text-white flex justify-between items-center'
       >
         <div className='flex items-center space-x-4'>
           <img
@@ -61,17 +61,17 @@ export default function Home() {
 
       <div className='w-full h-32 bg-[#223544]'></div>
 
-      <div className='w-full h-[650px]'>
-        <div className='mirrored-background flex flex-col md:flex-row items-start justify-between px-4 md:px-20 relative'>
-          <div className='max-w-screen-xl mx-auto px-4 py-4 flex flex-col md:flex-row space-x-0 md:space-x-24 absolute top-[-130px] left-4 md:left-[140px]'>
+      <div className='relative w-full' style={{ height: 'calc(100vh - 6rem - 8rem)' }}>
+        <div className='mirrored-background flex flex-col md:flex-row items-start justify-between px-4 md:px-20 relative' style={{ height: 'calc(100vh - 4rem - 8rem)' }}>
+          <div className='w-full px-40 py-4 flex flex-col md:flex-row justify-between space-x-0 md:space-x-16 absolute top-[-130px] left-2 right-2'>
             <div className='text-white'>
-              <h1 className='text-3xl md:text-5xl font-bold'>Premium Chauffeur Service</h1>
-              <p className='text-sm md:text-md font-normal text-slate-100/80'>
+              <h1 className='text-xl md:text-5xl font-bold' style={{fontSize: '42px'}}>Premium Chauffeur Service</h1>
+              <p className='text-md md:text-md font-normal text-slate-100/80'>
                 Your exclusive and dependable chauffeur service indulgence
               </p>
             </div>
 
-            <div className='flex justify-center py-4 mt-4'>
+            <div className='flex justify-center py-4 px-16 z-[1]' style={{ height: 'calc(100vh - 2rem - 8rem)' }}>
               <div
                 className='py-8 px-5 rounded-[20px] shadow-lg w-full md:w-[450px] backdrop-blur-md border border-slate-700'
                 style={{
@@ -79,7 +79,7 @@ export default function Home() {
                 }}
               >
                 <div className='flex space-x-4 mb-4 w-full'>
-                  <button className='flex-grow flex items-center justify-center text-white py-2 px-4 rounded-full bg-[#223544] border border-[#ccc]'>
+                  <button className='flex-grow flex items-center justify-center text-white py-1 px-4 rounded-full bg-[#223544] border border-[#ccc]'>
                     <img
                       src='images/icons/transfer.png'
                       alt='Transfer Icon'
@@ -104,9 +104,9 @@ export default function Home() {
                   </button>
                 </div>
 
-                <div className='grid grid-cols-1 gap-1 mb-2 relative'>
+                <div className='grid grid-cols-1 mb-2 relative'>
                   <label htmlFor='pickup-location' className='w-full'>
-                    <span className='text-sm'>Pick Up</span>
+                    <span style={{fontSize: '12px'}}>Pick Up</span>
                   </label>
                   <div className='relative w-full'>
                     <input
@@ -130,9 +130,9 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className='grid grid-cols-1 gap-1 mb-2 relative'>
+                <div className='grid grid-cols-1 mb-2 relative'>
                   <label htmlFor='drop-location' className='w-full'>
-                    <span className='text-sm'>Drop Off</span>
+                    <span style={{fontSize: '12px'}}>Drop Off</span>
                   </label>
                   <div className='relative w-full'>
                     <input
@@ -168,9 +168,9 @@ export default function Home() {
                 </div>
 
                 <div className='flex justify-between gap-4 mb-2 relative'>
-                  <div className='grid grid-cols-1 gap-1 mb-2 relative'>
+                  <div className='grid grid-cols-1 mb-2 relative'>
                     <label htmlFor='pickup-date' className='w-full'>
-                      <span className='text-sm'>Date</span>
+                      <span style={{fontSize: '12px'}}>Date</span>
                     </label>
                     <div className='relative w-full'>
                       <input
@@ -188,12 +188,12 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className='grid grid-cols-1 gap-1 mb-2 relative'>
+                  <div className='grid grid-cols-1 mb-2 relative'>
                     <label
                       htmlFor='pickup-time'
-                      className='w-full text-sm mb-1'
+                      className='w-full text-sm mb-0'
                     >
-                      <span className='text-sm'>Time</span>
+                      <span style={{fontSize: '12px'}}>Time</span>
                     </label>
                     <div className='relative w-full'>
                       <input
@@ -221,7 +221,7 @@ export default function Home() {
                   }}
                 />
 
-                <div className='grid grid-cols-1 gap-1 mb-4 mt-4 relative'>
+                <div className='grid grid-cols-1 mb-2 mt-4 relative'>
                   <button
                     className='flex-grow flex items-center'
                     style={{ color: "#FDC65C" }}
@@ -245,13 +245,13 @@ export default function Home() {
             </div>
           </div>
           {/* TODO: style below div */}
-          <div className='absolute mx-auto bottom-60 mb-10 px-8 z-[5]'>
-            <p className="text-2xl">Do you want to customise your booking?</p>
-            <p style={{ fontSize: '12px' }}> We offer customised bookings for any location, from bulk or intercity trips to monthly packages. </p>
+          <div className='absolute mx-auto bottom-0 mb-24 ml-20 px-8 z-[5]'>
+            <p className="text-xl" style={{color: '#CED5E5', fontSize: '20px'}}>Do you want to customise your booking?</p>
+            <p style={{ fontSize: '12px', color: '#CED5E5' }}> We offer customised bookings for any location, from bulk or intercity trips to monthly packages. </p>
             <div className='flex space-x-4 mt-2'> <div>
-              <p style={{ fontSize: '14px' }}>Contact us now</p>
+              <p style={{ fontSize: '14px', color: '#CED5E5' }}>Contact us now</p>
             </div>
-              <div className='flex space-x-2' style={{ fontSize: '16px' }}>
+              <div className='flex space-x-2' style={{ fontSize: '14px' }}>
                 <img src='images/icons/call.png' alt='Icon' style={{ height: "20px", width: "20px", display: "inline", marginRight: "5px" }} />
                 <p style={{ color: "#FDC65C", display: "inline" }}>+44 (0) 207 112 8101</p>
                 <img src='images/icons/call.png' alt='Icon' style={{ height: "20px", width: "20px", display: "inline", marginRight: "5px" }} />
@@ -261,11 +261,14 @@ export default function Home() {
           </div>
 
         </div>
-      </div>
+      
 
       {/* set gradient accordingly below */}
-      <div className='w-full h-[10rem] absolute -bottom-20 md:-bottom-[114px] z-[1] bg-gradient-to-t from-[#223544]'></div>
-      <div className='w-full h-24 absolute -bottom-40 md:-bottom-[200px] z-[-1] bg-[#223544]'></div>
+      <div className="w-full h-40 absolute bottom-16 z-[0] bg-gradient-to-t from-[#11202D] to-transparent"></div>
+      <div className="w-full h-16 absolute bottom-0 z-[-1] bg-[#11202D]"></div>
+      </div>
+
+
 
       <div
         className='relative bg-no-repeat bg-center'
