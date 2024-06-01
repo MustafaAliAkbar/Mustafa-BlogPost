@@ -10,7 +10,7 @@ export default function Blogs() {
     const [searchQuery, setSearchQuery] = useState('');
 
     useEffect(() => {
-        fetch(`http://localhost:3001/api/blogs?page=${page}&limit=3&search=${searchQuery}`)
+        fetch(`/api/blogs?page=${page}&limit=3&search=${searchQuery}`)
             .then(response => response.json())
             .then(data => {
                 setBlogs(data.blogs);

@@ -9,7 +9,7 @@ export default function BlogPost() {
 
     useEffect(() => {
         if (id) {
-            fetch(`http://localhost:3001/api/blogs/${id}`)
+            fetch(`/api/blogs/${id}`)
                 .then(response => {
                     if (response.ok) {
                         return response.json();
