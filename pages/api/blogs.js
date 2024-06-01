@@ -7,23 +7,20 @@ const mockBlogs = [
 ];
 
 export default function handler(req, res) {
-    const { method, query } = req;
+    const { method, query, params } = req;
 
     if (method === 'GET') {
-        if (query.id) {
+        if (params.id) {
             // Fetch blog by ID
-            const blogId = parseInt(query.id, 10);
+            const blogId = parseInt(params.id, 10);
             const blog = mockBlogs.find(b => b.id === blogId);
             if (blog) {
                 res.status(200).json(blog);
             } else {
                 res.status(404).json({ message: 'Blog post not found' });
             }
-        } else if (query.latest === 'true') {
-            // Fetch latest blogs
-            const latestBlogs = mockBlogs.slice(-3).reverse();
-            res.status(200).json(latestBlogs);
-        } else {
+        } 
+        else {
             // Paginated and searched blog posts
             const page = parseInt(query.page) || 1;
             const limit = parseInt(query.limit) || 3;
