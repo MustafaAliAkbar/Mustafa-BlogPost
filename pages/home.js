@@ -61,8 +61,8 @@ export default function Home() {
 
       <div className='w-full h-32 bg-[#223544]'></div>
 
-      <div className='relative w-full' style={{ height: 'calc(100vh - 7rem - 8rem)' }}>
-        <div className='mirrored-background flex flex-col md:flex-row items-start justify-between px-4 md:px-20 relative' style={{ height: 'calc(100vh - 4rem - 8rem)' }}>
+      <div className='relative w-full' style={{ height: 'calc(100vh - 6rem - 8rem)' }}>
+        <div className='mirrored-background flex flex-col md:flex-row items-start justify-between px-4 md:px-20 relative' style={{ height: 'calc(100vh - 6rem - 8rem)' }}>
           <div className='w-full md:px-20 xl:px-40 xxl:px-40 py-4 flex flex-col md:flex-row justify-between space-x-0 md:space-x-16 absolute top-[-130px] left-2 right-2'>
             <div className='text-white'>
               <h1 className='text-xl md:text-5xl font-bold' style={{fontSize: '42px'}}>Premium Chauffeur Service</h1>
@@ -245,7 +245,7 @@ export default function Home() {
             </div>
           </div>
           {/* TODO: style below div */}
-          <div className='absolute mx-auto bottom-0 mb-20 xl:ml-20 px-8 z-[5]'>
+          <div className='absolute mx-auto bottom-0 mb-10 ml-14 md:ml-14 px-8 z-[5]'>
             <p className="text-xl" style={{color: '#CED5E5', fontSize: '20px'}}>Do you want to customise your booking?</p>
             <p style={{ fontSize: '12px', color: '#CED5E5' }}> We offer customised bookings for any location, from bulk or intercity trips to monthly packages. </p>
             <div className='flex space-x-4 mt-2'> <div>
