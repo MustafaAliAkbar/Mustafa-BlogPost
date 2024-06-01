@@ -19,11 +19,8 @@ export default function handler(req, res) {
             } else {
                 res.status(404).json({ message: 'Blog post not found' });
             }
-        } else if (query.latest === 'true') {
-            // Fetch latest blogs
-            const latestBlogs = mockBlogs.slice(-3).reverse();
-            res.status(200).json(latestBlogs);
-        } else {
+        } 
+        else {
             // Paginated and searched blog posts
             const page = parseInt(query.page) || 1;
             const limit = parseInt(query.limit) || 3;
