@@ -61,9 +61,9 @@ export default function Home() {
 
       <div className='w-full h-32 bg-[#223544]'></div>
 
-      <div className='relative w-full' style={{ height: 'calc(100vh - 6rem - 8rem)' }}>
+      <div className='relative w-full' style={{ height: 'calc(100vh - 7rem - 8rem)' }}>
         <div className='mirrored-background flex flex-col md:flex-row items-start justify-between px-4 md:px-20 relative' style={{ height: 'calc(100vh - 4rem - 8rem)' }}>
-          <div className='w-full px-40 py-4 flex flex-col md:flex-row justify-between space-x-0 md:space-x-16 absolute top-[-130px] left-2 right-2'>
+          <div className='w-full md:px-20 xl:px-40 xxl:px-40 py-4 flex flex-col md:flex-row justify-between space-x-0 md:space-x-16 absolute top-[-130px] left-2 right-2'>
             <div className='text-white'>
               <h1 className='text-xl md:text-5xl font-bold' style={{fontSize: '42px'}}>Premium Chauffeur Service</h1>
               <p className='text-md md:text-md font-normal text-slate-100/80'>
@@ -71,9 +71,9 @@ export default function Home() {
               </p>
             </div>
 
-            <div className='flex justify-center py-4 px-16 z-[1]' style={{ height: 'calc(100vh - 2rem - 8rem)' }}>
+            <div className='flex justify-center py-4 xl:px-16 z-[1]' style={{ height: 'calc(100vh - 3rem - 8rem)' }}>
               <div
-                className='py-8 px-5 rounded-[20px] shadow-lg w-full md:w-[450px] backdrop-blur-md border border-slate-700'
+                className='py-4 px-5 rounded-[20px] shadow-lg w-full md:w-[450px] backdrop-blur-md border border-slate-700'
                 style={{
                   backgroundColor: "rgba(18, 25, 33, 0.8)",
                 }}
@@ -221,7 +221,7 @@ export default function Home() {
                   }}
                 />
 
-                <div className='grid grid-cols-1 mb-2 mt-4 relative'>
+                <div className='grid grid-cols-1 mb-4 mt-4 relative'>
                   <button
                     className='flex-grow flex items-center'
                     style={{ color: "#FDC65C" }}
@@ -245,7 +245,7 @@ export default function Home() {
             </div>
           </div>
           {/* TODO: style below div */}
-          <div className='absolute mx-auto bottom-0 mb-24 ml-20 px-8 z-[5]'>
+          <div className='absolute mx-auto bottom-0 mb-20 xl:ml-20 px-8 z-[5]'>
             <p className="text-xl" style={{color: '#CED5E5', fontSize: '20px'}}>Do you want to customise your booking?</p>
             <p style={{ fontSize: '12px', color: '#CED5E5' }}> We offer customised bookings for any location, from bulk or intercity trips to monthly packages. </p>
             <div className='flex space-x-4 mt-2'> <div>
